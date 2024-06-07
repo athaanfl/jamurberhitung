@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/output.css" />
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+        />
+        <title>Home</title>
+        <style>
+            html,
+            .swiper {
+                width: 100%;
+                height: 100%;
+            }
+
+            .swiper-slide {
+                font-size: 18px;
+
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: block;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+            }
+
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body class=""
+    >
+        <!-- NAVBAR -->
+        <header
+            class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+        >
+            <div class="container">
+                <div class="flex items-center justify-between relative">
+                    <div class="">
+                        <a
+                            href="index.html"
+                            class="font-bold text-lg text-white block py-6"
+                            >Jamur Berhitung</a
+                        >
+                    </div>
+                    <div class="flex items-center px-4">
+                        <button
+                            id="hamburger"
+                            class="block absolute right-4 md:hidden"
+                        >
+                            <span
+                                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+                            ></span>
+                            <span
+                                class="hamburger-line transition duration-300 ease-in-out"
+                            ></span>
+                            <span
+                                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+                            ></span>
+                        </button>
+                        <nav
+                            id="nav-menu"
+                            class="hidden absolute py-5 bg-[#40578C] w-full right-0 top-full md:block md:static md:bg-transparent md:max-w-full"
+                        >
+                            <ul class="block h-[100vh] md:flex md:h-full">
+                                <li class="group">
+                                    <a
+                                        href="index.html"
+                                        class="text-base text-black md:text-[#40578C] py-10 mx-8 flex md:py-2"
+                                        >Beranda</a
+                                    >
+                                </li>
+                                <li class="group">
+                                    <a
+                                        href="about.html"
+                                        class="text-base text-white py-10 mx-8 flex group-hover:text-primary md:py-2"
+                                        >Tentang</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div style="background-image: url('Public/img/ssGame/aldi/bg.jpg');" class="hero h-screen">
+            <div id="hero" class="container text-center">
+                <h1 class="text-black text-4xl font-semibold">
+                    Selamat datang di Petualangan Jamur Ajaib!
+                </h1>
+                <br>
+                <p class="text-black text-xl">
+                    Siapkan dirimu untuk sebuah tantangan seru dan mendidik! Di dunia penuh warna ini, kamu akan berpetualang mencari jamur-jamur ajaib yang tersembunyi di hutan. Tapi ingat, hanya jamur dengan angka yang benar yang bisa kamu pilih!                </p>
+            </div>
+        </div>
+        <div>
+            <div class="flex flex-col md:flex-row md:h-[700px] h-[800px]">
+                <div
+                    class="flex flex-col px-4 justify-center items-center md:w-1/2 w-full h-full my-auto bg-[#40578C]"
+                >
+                <div id="galeryKiri">
+                    <p class="text-xl text-white">Galeri</p>
+                    <h1 class="font-bold text-3xl md:text-7xl text-white">
+                        Menjelajah <br />
+                        Sambil Belajar
+                    </h1>
+                    <p class="text-white py-5">
+                        Di dunia penuh warna ini, kamu akan berpetualang mencari jamur-jamur ajaib yang tersembunyi di hutan. <br> Tapi ingat, hanya jamur dengan angka yang benar yang bisa kamu pilih!
+                    </p>
+                    <button
+                        class="bg-[#0C1829] w-fit text-white font-bold px-5 py-3 rounded-lg"
+                    >
+                        <a href="https://athaanfl.itch.io/jamurberhitung" target="_blank">Mainkan Sekarang</a>
+                    </button>
+                </div>
+
+                </div>
+                <div class="flex flex-col justify-center md:w-1/2 h-full bg-white w-full">
+                    <div id="galeryKanan" >
+                        <div class="flex justify-center mb-5">
+                            <img
+                                class="md:w-[200px] md:h-[200px] w-[142px] mr-5 md:mr-10 h-[144px] rounded-md"
+                                src="Public/img/ssGame/aldi/galeri1.png"
+                                alt=""
+                            />
+                            <img
+                                class="md:w-[400px] md:h-[200px] w-[168px] rounded-md"
+                                src="Public/img/ssGame/aldi/galeri2.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="flex justify-center">
+                            <img
+                                class="md:w-[400px] md:h-[200px] w-[168px] mr-5 md:mr-10 rounded-md"
+                                src="Public/img/ssGame/aldi/galeri3.png"
+                                alt=""
+                            />
+                            <img
+                                class="md:w-[200px] md:h-[200px] w-[142px] h-[144px] rounded-md"
+                                src="Public/img/ssGame/aldi/galeri4.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container bg-white text-center md:pt-20">
+            <div id="eksplorKiri" class="flex flex-wrap md:flex-col justify-center text-black">
+                <div class="flex justify-center">
+                    <h1 class="text-3xl font-semibold pb-5 self-center">Cuplikan <span class="text-[#40578C]">Permainan</span></h1><img class="self-center" src="Public/img/Group2.png" alt="">
+                </div>
+                <br>
+            </div>
+            <div id="eksplorKanan" class="flex justify-evenly flex-wrap">
+                <div>
+                    <img class="w-[500px] rounded-lg" src="Public/img/ssGame/aldi/home.png" alt="">
+                    <div class="text-white bg-[#40578C] w-fit mx-auto -translate-y-10 rounded-lg py-3 px-5">
+                        <p class="font-semibold text-xl">Menu Utama</p>
+                        <p>Sambutan hangat sebelum belajar</p>
+                    </div>
+                <div>
+                    <div>
+                        <img class="w-[500px] rounded-lg" src="Public/img/ssGame/aldi/berhitung.png" alt="">
+                        <div class="text-white bg-[#40578C] w-fit mx-auto -translate-y-10 rounded-lg py-3 px-5">
+                            <p class="font-semibold text-xl">Belajar Menyenangkan</p>
+                            <p>Belajar menghitung lebih menyenangkan</p>
+                        </div>
+                    <img class="w-[500px] rounded-lg" src="Public/img/ssGame/aldi/level.png" alt="">
+                    <div class="text-white bg-[#40578C] w-fit mx-auto -translate-y-10 rounded-lg py-3 px-5">
+                        <p class="font-semibold text-xl">Banyak Tingkat Level</p>
+                        <p>Siapkan dirimu untuk soal yang semakin sulit</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="info1" class="py-20">
+            <div class="container">
+                <div class="flex">
+                    <h1 class="text-3xl font-semibold pb-5 self-center text-black">Karakter Utama</h1>
+                    <img class="self-center" src="Public/img/Group2" alt="">
+                </div>
+
+                <div class="flex flex-wrap mt-10">
+                    <div class="xl:w-1/3 w-full mx-auto text-center flex justify-center pr-10 md:pr-0 md:justify-start">
+                        <img src="Public/img/bgbiru.png" class="absolute w-72 md:w-[430px] md:h-[391px]" alt="">
+                        <img src="Public/img/ssGame/aldi/char.png" class="md:w-[430px] relative md:h-[391px] w-72 z-50 translate-x-10 translate-y-10" alt="">
+                    </div>
+                    <div class="xl:w-2/3 mt-20 md:mt-10">
+                        <div class="md:px-10 text-black">
+                            <h1 class="font-semibold text-2xl mb-5">Alri</h1>
+                            <p class="md:w-1/2 text-[#A7A7A7] mb-5">Alri akan mencari jamur yang sesuai agar bisa menjelajahi tempat selanjutnya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+
+        <div class="bg-[#40578C]">
+        <footer>
+            <p class="container footer p-10 bg-[#40578C] text-white">
+                &copy; 2023. All Rights Reserved  
+            </p>
+        </footer>
+        </div>
+
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="Public/Js/script2.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                freeMode: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 4,
+                    },
+                },
+            });
+        </script>
+    </body>
+</html>
